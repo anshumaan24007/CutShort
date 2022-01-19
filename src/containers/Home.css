@@ -1,0 +1,61 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap');
+.mainContainer .titleContainer{
+    display: flex;
+    position: relative;
+    top: 100px;
+    justify-content: center;
+}
+.mainContainer .logo{
+    height: 36px;
+    width: 36px;
+}
+
+.mainContainer .titleText{
+    font-family: 'Inter';
+    font-size: 32px;
+    font-weight: 700;
+    letter-spacing: -2px;
+    margin-left: 15px;
+}
+
+.mainContainer .c-bannerContainerStyle {
+    position: relative;
+    top: 300px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.mainContainer .formArea{
+    display: grid;
+    grid-template-rows: auto auto;
+    justify-content: center;  
+    margin-top: 375px;
+}
+
+.mainContainer .formArea2{
+    display: grid;
+    grid-template-columns: auto auto;
+    justify-content: center;  
+    margin-top: 375px;
+}
+
+.mainContainer .c-containerStyle{
+    margin: 9px;
+    margin-bottom: 24px;
+    }
+
+.mainContainer .c-inputBoxStyle{
+    width: 400px;
+}
+
+.mainContainer .c-containerGeneric {
+    width: 416px;
+    padding-bottom: 20px;
+
+}
+
+.mainContainer .c-buttonGeneric{
+    top: 0px;
+    width: 416px;
+    margin-bottom: 200px;
+}

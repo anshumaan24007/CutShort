@@ -1,15 +1,12 @@
 import logo from './logo.svg';
 import './App.css';
-import Button from './components/Button';
-import TextArea from './components/TextArea';
-import Banner from './components/Banner';
+import IconTextComponent from "./components/IconTextComponent"
+import Home from './containers/Home';
 
 function App() {
   return (
     <div className="App">
-    <TextArea/>
-    <Banner/>
-    <Button/>
+      <Home/>
     </div>
   );
 }
