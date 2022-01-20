@@ -9,7 +9,7 @@ import { ReactSVG } from 'react-svg';
 const IconTextComponent = props =>(
     <div
     className={props.containerStyle}
-    onClick={props.onClick}
+    onClick={e => props.onClick(e,props.keyNo)}
     >
         <ReactSVG src={props.iconSvg} className={props.iconStyle}/>
         <div className={props.containerTextStyle}>

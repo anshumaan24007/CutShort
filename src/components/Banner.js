@@ -6,8 +6,8 @@ import propTypes from 'prop-types';
 
 const Banner = props =>(
     <div className={props.bannerContainerStyle}>
-    <h1 className={props.bannerHeading}>{props.headingText}</h1>
-    <h4 className={props.bannerSubText}>{props.subHeadingText}</h4>
+    <div className={props.bannerHeading}>{props.headingText}</div>
+    <div className={props.bannerSubText}>{props.subHeadingText}</div>
     </div>
 );
 

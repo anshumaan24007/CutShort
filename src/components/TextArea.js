@@ -11,10 +11,11 @@ const TextArea = props =>(
         type={props.type}
         placeholder={props.placeholder}
         className={props.inputBoxStyle}
-        // value={props.value}
-        onChange={props.onChange}
+        value={props.value}
+        onChange={e => props.onChange(e,props.keyNo)}
         maxLength={props.maxLength}
         disabled={props.disable}
+        required={props.required}
       />
       </div>
 );
@@ -28,7 +29,8 @@ TextArea.defaultProps = {
     placeholder:'Steve Jobs',
     maxLength:24,
     disable:false,
-    optional:''
+    optional:'',
+    required:false
 };
 
 TextArea.propTypes = {
