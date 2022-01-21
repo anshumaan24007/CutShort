@@ -82,7 +82,7 @@ class Home extends Component {
         }
     }
 
-    onClick = () =>{
+    onClickfunc = () =>{
         console.log("End of UI");
     }
 
@@ -124,7 +124,7 @@ class Home extends Component {
                     required={true}/>
                     <Button
                     onClick={this.onSubmitHandler}
-                    disable={this.state.fName != ""&& this.state.dName != ""?false:true}
+                    disable={this.state.fName !== ""&& this.state.dName !== ""?false:true}
                     />
                     </div>
                 </div>:""}
@@ -151,7 +151,7 @@ class Home extends Component {
                     keyNo={4}/>
                     <Button
                     onClick={this.onSubmitHandler}
-                    disable={this.state.wName != ""?false:true}/>
+                    disable={this.state.wName !== ""?false:true}/>
                     </div>
                     </div>:""}
 
@@ -176,7 +176,7 @@ class Home extends Component {
                     </div>
                     <Button
                     onClick={this.onSubmitHandler}
-                    disable={this.state.containerStyle1 != "c-containerStyle"||this.state.containerStyle2 != "c-containerStyle"?false:true}/>
+                    disable={this.state.containerStyle1 !== "c-containerStyle"||this.state.containerStyle2 !== "c-containerStyle"?false:true}/>
                 </div>:""}
                 
                 {/* page 4 ******************************/}
@@ -186,7 +186,7 @@ class Home extends Component {
                     subHeadingText= {"You have completed onboarding, you can start using the "+this.state.wName+"."}/>
                     <div className='formArea'>
                     <Button
-                    onClick={this.onClick}
+                    onClick={this.onClickfunc}
                     label={"Launch Eden"}/>
                     </div>
                 </div>:""}
